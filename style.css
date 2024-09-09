@@ -63,7 +63,7 @@ body {
 
 .card {
   background-color: var(--cls-white);
-  width: 400px;
+  width: clamp(327px, 80vw, 384px);
   padding: 24px;
   display: grid;
   grid-template-columns: 1fr;
@@ -92,12 +92,12 @@ body {
 
 .card__tag,
 .card__date {
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 2.5vw, 0.875rem);
   color: var(--cls-gray-950);
 }
 
 .card__title {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
   font-weight: 800;
   margin: 0;
   transition: color 0.1s ease-in-out;
@@ -110,6 +110,7 @@ body {
 }
 
 .card__description {
+  font-size: clamp(0.875rem, 2.5vw, 1.5rem);
   color: var(--cls-gray-500);
 }
 
